@@ -1,5 +1,9 @@
-@use "./reset";
-@use "./variables";
-@use "./mixins";
-@use "./fonts";
-@use "./base";
+@use "./base/reset";
+@use "./base/variables";
+@use "./base/fonts";
+@use "./base/base";
+@use "./base/mixins";
+@use "./base/debag";
+@use "./layout/container";
+@use "./layout/header";
+@use "./layout/hero";

@@ -1,0 +1,6 @@
+.container {
+  max-width: 80rem; /* 1280px при 16px, но пользовательские настройки уважает */
+  margin-inline: auto;
+  padding-inline: clamp(16px, calc(15px + 3.125vw), 55px);
+  
+}

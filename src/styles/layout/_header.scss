@@ -1,0 +1,124 @@
+.header {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 40px;
+  pointer-events: none;
+}
+
+.header .container {
+  position: relative;
+  height: 680px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header a,
+.header button,
+.header nav {
+  pointer-events: auto;
+}
+
+.header__sidebar {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 154px;
+  height: 680px;
+  padding-top: 32px;
+  padding-left: 35px;
+  padding-bottom: 40px;
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto;  
+}
+
+.header__nav {
+  padding-top: 48px;
+  padding-left: 138px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__nav-link {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Правая зона */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-left: auto; /* прижимает вправо */
+  padding-top: 38px;
+  padding-right: 8px; /* от правого края фона */
+}
+
+.header__phone {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.header__cta {
+  background: transparent;
+  color: var(--color-white);
+
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  gap: 35px;
+}
+
+.header__socials-link {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 0.6875rem; /* 11px */
+  letter-spacing: 0.23em;  
+}
+
+.header__socials-item:nth-child(2) .header__socials-link::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: var(--color-text-primary);
+  flex: 0 0 auto;  
+}
