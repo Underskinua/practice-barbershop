@@ -1,7 +1,7 @@
 .hero {
   height: 680px;
   position: relative;  
-  overflow: hidden;
+  overflow: hidden;    
 }
 
 .hero > .container {
@@ -56,19 +56,20 @@
   letter-spacing: 0.11em;
   text-transform: uppercase;
   margin-bottom: 27px;
+  position: relative;
+  padding-left: 85px;
 }
 
 .hero__eyebrow::before {
-  content: "";
-  display: inline-block;
+  content: "";  
+  position: absolute;
   width: 61px;
-  height: 1px;
+  height: 1px;  
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);     
   background: var(--color-text-muted);
-  margin-top: 8px;
-  margin-right: 24px;
-  align-content: center;
   opacity: 0.5;
-
 }
 
 /* H1 */

@@ -1,0 +1,54 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* --- СВЕТЛАЯ КНОПКА (как в ABOUT) --- */
+.btn--light {
+  color: var(--color-text-primary);
+  border-color: var(--color-accent);
+  background: transparent;
+
+  &:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+}
+
+
+/* --- БЕЛАЯ ТОНКАЯ КНОПКА (как в HEADER / HERO) --- */
+.btn--outline {
+  color: var(--color-white);
+  border-color: var(--color-accent);
+  background: transparent;
+
+  &:hover {
+    background: var(--color-accent);
+    color: var(--color-text-primary);
+  }
+}
+
+
+/* --- АКЦЕНТНАЯ КНОПКА (если понадобится) --- */
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--color-white);
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+

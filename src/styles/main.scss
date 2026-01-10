@@ -3,7 +3,9 @@
 @use "./base/fonts";
 @use "./base/base";
 @use "./base/mixins";
+@use "./components/btn";
 @use "./base/debag";
 @use "./layout/container";
 @use "./layout/header";
 @use "./layout/hero";
+@use "./layout/about";

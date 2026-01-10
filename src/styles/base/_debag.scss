@@ -1,21 +1,18 @@
-.debag-layout::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-
-  background-image: url("/overlay.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1280px auto;
-  opacity: 0.35;
-  pointer-events: none;
-}
-
+@use "../base/mixins" as mixins;
 :root {
-  --debug-overlay: 0;
+  --debug-overlay: 1; // глобальный контрол прозрачности
 }
 
-.debag-layout::before {
-  opacity: calc(var(--debug-overlay) * 0.35);
+/* hero overlay */
+.debag-hero {
+  @include mixins.debug-overlay("overlay.png");
+}
+
+/* about overlay */
+.debag-about {
+  @include mixins.debug-overlay("overlay-about.png");
+}
+
+.debag-services {
+  @include mixins.debug-overlay("overlay-services.png");
 }
