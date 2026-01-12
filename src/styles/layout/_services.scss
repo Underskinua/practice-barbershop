@@ -1,0 +1,117 @@
+.services {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+     background-image: linear-gradient(90deg, rgba(9, 11, 19, 1) 0%, rgba(9, 11, 19, 0.2) 100%),
+     url("../../assets/images/services/services-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services__eyebrow {
+    color: var(--color-text-muted);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.6875rem; /* 11px */
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.services__eyebrow::before {
+    content: "";    
+    position: absolute;    
+    width: 60px;
+    height: 1px;
+    left: 0;        
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-text-muted);
+}
+
+.services__title {
+    color: var(--color-white);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem; /* 44px */    
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+}
+
+.services__columns {
+    display: flex;    
+    gap: 20px;
+    margin-bottom: 66px;        
+}
+
+.services__list {
+    flex: 1;   
+    padding-left: 40px; 
+    padding-right: 40px;    
+}
+
+.services__item {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;    
+    color: var(--color-text-muted);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem; /* 18px */
+    letter-spacing: 0.02em; /*2%*/    
+    padding: 12px 0;  
+}
+
+.services__name {
+    display: flex;
+    align-items: center;
+    flex: 1; /* ← растягиваем */
+}
+
+.services__text {
+    white-space: nowrap;
+}
+
+.services__line {
+    flex-grow: 1;
+    height: 1px;
+    background: var(--color-text-muted);
+
+    margin-left: 28px;  /* от текста до линии */
+    margin-right: 22px; /* от линии до цены */    
+}
+
+.services__price {        
+    white-space: nowrap;
+}
+
+/* Левая колонка → линия должна быть длиннее */
+.services__list--left .services__price {
+    margin-right: -12px; /* было 22 → двигаем цену правее */    
+}
+
+/* Правая колонка → линия должна быть короче */
+.services__list--right .services__name {
+    margin-left: -10px; /* было 28 → двигаем текст левее */
+}
+
+.services .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.services__list--left {
+     background: rgba(17,19,25,0.6); // подгони под макет
+    backdrop-filter: blur(2px);
+}
+
+.services__list--right {
+    background: linear-gradient(
+  180deg,
+  rgba(9, 11, 19, 1) 0%,
+  rgba(9, 11, 19, 0.2) 100%
+    );    
+}
