@@ -16,3 +16,7 @@
 .debag-services {
   @include mixins.debug-overlay("overlay-services.png");
 }
+
+.debag-traditional {
+  @include mixins.debug-overlay("overlay-traditional.png");
+}
