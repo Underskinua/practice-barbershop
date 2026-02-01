@@ -1,6 +1,6 @@
 @use "../base/mixins" as mixins;
 :root {
-  --debug-overlay: 0; // глобальный контрол прозрачности
+  --debug-overlay: 1; // глобальный контрол прозрачности
 }
 
 /* hero overlay */
@@ -19,4 +19,8 @@
 
 .debag-traditional {
   @include mixins.debug-overlay("overlay-traditional.png");
+}
+
+.debag-barbers {
+  @include mixins.debug-overlay("overlay-barbers.png");
 }
