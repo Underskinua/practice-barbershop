@@ -24,3 +24,7 @@
 .debag-barbers {
   @include mixins.debug-overlay("overlay-barbers.png");
 }
+
+.debag-portfolio {
+  @include mixins.debug-overlay("overlay-portfolio.png");
+}
