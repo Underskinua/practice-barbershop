@@ -1,10 +1,16 @@
+/* 1. Base — фундамент */
 @use "./base/reset";
 @use "./base/variables";
 @use "./base/fonts";
+@use "./base/utilities";
 @use "./base/base";
 @use "./base/mixins";
+/* 2. Components — переиспользуемые блоки */
+@use "./components/typography";
 @use "./components/btn";
+/* 3. Utilities / helpers */
 @use "./base/debag";
+/* 4. Layout — страницы и секции */
 @use "./layout/container";
 @use "./layout/header";
 @use "./layout/hero";
@@ -13,3 +19,5 @@
 @use "./layout/traditional";
 @use "./layout/barbers";
 @use "./layout/portfolio";
+@use "./layout/contacts";
+@use "./layout/footer";

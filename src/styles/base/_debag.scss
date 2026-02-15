@@ -5,26 +5,75 @@
 
 /* hero overlay */
 .debag-hero {
-  @include mixins.debug-overlay("overlay.png");
+  @include mixins.debug-overlay("overlay.png", 1280px);  
 }
 
 /* about overlay */
 .debag-about {
-  @include mixins.debug-overlay("overlay-about.png");
+  @include mixins.debug-overlay("overlay-about.png", 1280px);
 }
 
 .debag-services {
-  @include mixins.debug-overlay("overlay-services.png");
+  @include mixins.debug-overlay("overlay-services.png", 1280px);
 }
 
 .debag-traditional {
-  @include mixins.debug-overlay("overlay-traditional.png");
+  @include mixins.debug-overlay("overlay-traditional.png", 1280px);
 }
 
 .debag-barbers {
-  @include mixins.debug-overlay("overlay-barbers.png");
+  @include mixins.debug-overlay("overlay-barbers.png", 1280px);
 }
 
 .debag-portfolio {
-  @include mixins.debug-overlay("overlay-portfolio.png");
+  @include mixins.debug-overlay("overlay-portfolio.png", 1280px);
+}
+
+.debag-contacts {
+  @include mixins.debug-overlay("overlay-contacts.png", 1280px);
+}
+
+.debag-footer {
+  @include mixins.debug-overlay("overlay-footer.png", 1280px);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .debag-hero {
+    @include mixins.debug-overlay("overlay-768.png", 768px);
+  }
+
+  .debag-about {
+    @include mixins.debug-overlay("overlay-about-768.png", 768px);
+  }
+
+  .debag-services {
+    @include mixins.debug-overlay("overlay-services-768.png", 768px);
+  }
+
+  .debag-traditional {
+    @include mixins.debug-overlay("overlay-traditional-768.png", 768px);
+  }
+
+  .debag-barbers {
+    @include mixins.debug-overlay("overlay-barber-768.png", 768px);
+  }
+
+  .debag-portfolio {
+    @include mixins.debug-overlay("overlay-portfolio-768.png", 768px);
+  }
+
+  .debag-contacts {
+    @include mixins.debug-overlay("overlay-contacts-768.png", 768px);
+  }
+
+  .debag-footer {
+    @include mixins.debug-overlay("overlay-footer-768.png", 768px);
+  }
+
 }

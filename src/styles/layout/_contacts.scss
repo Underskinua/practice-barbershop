@@ -1,0 +1,167 @@
+.contacts {
+  position: relative;
+  
+  background: url("../../assets/images/contacts/contacts-bg.webp") center / cover no-repeat;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.75rem; /* 60px */
+  }
+
+//---left side --/
+&__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+    width: 40.9375rem; /* 655px */
+  }
+
+  &__title {
+    color: var(--color-white);
+  }
+
+  &__form-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 1.3125rem; /* 8px 0 21px */
+  }
+
+  &__row {
+    display: flex;
+    gap: 1.875rem; /* 30px */
+    margin-bottom: 2rem; /* 32px */
+  }
+
+/* Линия под input — border-bottom у обёртки */
+  &__field {
+    position: relative;
+    border-bottom: 0.0625rem solid var(--color-text-muted); /* 1px */
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-bottom-color: #c0c5d6;
+    }
+
+    &:focus-within {
+      border-bottom-color: var(--color-white);
+    }
+
+    &--name { width: 16.875rem; }   /* 270px */
+    &--phone { width: 16.25rem; }   /* 260px */
+    &--wide { width: 35rem; }       /* 560px */
+  }
+
+  // -- Input + textarea (оптимизация типографики)
+ &__input,
+  &__textarea {
+    width: 100%;
+    padding: 0.375rem 0 0.25rem; /* 6px 0 4px */
+
+    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: 0.6875rem; /* 11px */
+    letter-spacing: 0.1em;
+    line-height: 1.667;
+    text-transform: uppercase;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    &:focus {
+      cursor: text;
+    }
+  }
+
+  &__input { margin-bottom: 0.4375rem; }   /* 7px */
+  &__textarea { margin-bottom: 1.875rem; } /* 30px */
+
+
+/* Стили label по умолчанию */
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 1.5rem; /* 24px */
+
+    font-size: 0.6875rem; /* 11px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--color-text-muted);
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  &__input:focus + &__label,
+  &__input:not(:placeholder-shown) + &__label,
+  &__textarea:focus + &__label,
+  &__textarea:not(:placeholder-shown) + &__label {
+    top: 0;
+    font-size: 0.55rem;
+    color: var(--color-white);
+  }
+
+ &__button {
+    align-self: flex-start;
+    padding: 0.75rem 3.9375rem; /* 12px 63px */
+  }
+
+//--- right side --/
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem; /* 30px */
+    margin-left: 5rem; /* 80px */
+    width: 39.0625rem; /* 625px */
+  }
+
+  &__list {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 16px */
+    margin-bottom: 1.125rem; /* 18px */
+
+    color: var(--color-text-muted);
+
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    &--bold {
+      font-weight: 700;
+      margin-bottom: 1.25rem; /* 20px */
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+    stroke: var(--color-text-muted);
+
+    &:first-child {
+      margin-top: 0.125rem; /* 2px */
+    }
+  }
+
+  &__hours {
+    margin-top: 1.4375rem; /* 23px */
+  }
+
+  &__hours-title {
+    margin-bottom: 1.25rem; /* 20px */
+
+    &::before {
+      background: var(--color-text-muted);
+    }
+  }
+}

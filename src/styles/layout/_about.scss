@@ -1,71 +1,37 @@
 .about {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    position: relative;
-}
+  position: relative;
 
-.about__wrapper {
+  &__wrapper {
     display: flex;
-    align-items: center;    
-}
+    align-items: center;
+  }
 
-.about__images {
-    display: flex;
-    gap: 30px;
-}
+    &__images {
+        display: flex;
+        gap: 1.875rem; /* 30px */
+    }
 
-.about__content {
-    display: block;
-    width: 500px;
-    margin-left: 64px;
-    // margin-right: 37px;    
-}
+    &__content {
+        display: block;
+        width: 31.25rem; /* 500px */
+        margin-left: 4rem; /* 64px */
+    }
 
-.about__eyebrow {
-    color: var(--color-text-primary);
-    font-weight: 600;
-    font-size: 0.6875rem; /* 11px */
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-left: 80px;
-    position: relative;
-}
+    &__eyebrow {
+        margin-bottom: 1.25rem; /* 20px */
+    }
 
-.about__eyebrow::before {
-    content: "";    
-    position: absolute;    
-    width: 60px;
-    height: 1px;
-    left: 0;        
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--color-text-primary);
-}
+    &__title {
+        color: var(--color-text-primary);
+        margin-bottom: 1.25rem; /* 20px */
+    }
 
-.about__title {
-    color: var(--color-text-primary);
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 2.625rem; /* 42px */
-    line-height: 1.19; /*normal*/
-    letter-spacing: 0.05em;
-    margin-bottom: 20px;
-}
+    &__text {
+        color: var(--color-text-secondary);
+        margin-bottom: 2.1875rem; /* 35px */
 
-.about__text {
-    color: var(--color-text-secondary);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.857; /*26 = 26/14 = 1.857*/
-    letter-spacing: 0.02em; /*2%*/
-    margin-bottom: 35px;
+        &--lead {
+        margin-bottom: 1.25rem; /* 20px */
+        }
+    }
 }
-
-.about__text--lead {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.667; /*30 = 30/18 = 1.667*/ 
-    margin-bottom: 20px;   
-}
-

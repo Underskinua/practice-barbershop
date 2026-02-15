@@ -1,4 +1,4 @@
-@mixin debug-overlay($image, $opacity: 0.35) {
+@mixin debug-overlay($image, $width: 1280px, $opacity: 0.35) {
   position: relative;
 
   &::before {
@@ -10,7 +10,7 @@
     background-image: url("/debag/#{$image}");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 1280px auto;
+    background-size: #{$width} auto;
 
     /* глобальный контрол через root-переменную */
     opacity: calc(var(--debug-overlay, 1) * #{$opacity});

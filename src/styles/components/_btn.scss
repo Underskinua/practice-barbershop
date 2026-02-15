@@ -5,7 +5,7 @@
 
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
-
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 0.75rem; /* 12px */
   letter-spacing: 0.08em;
@@ -29,7 +29,7 @@
 }
 
 
-/* --- БЕЛАЯ ТОНКАЯ КНОПКА (как в HEADER / HERO) --- */
+/* --- БЕЛАЯ ТОНКАЯ КНОПКА (как в HEADER / HERO) - */
 .btn--outline {
   color: var(--color-white);
   border-color: var(--color-accent);

@@ -8,3 +8,12 @@
   --color-text-muted: #9da4bd; 
   --color-accent: #ff6c00;
 }
+
+
+$breakpoints: (
+  desktop: 1280px,
+  laptop: 1024px,
+  tablet: 768px,
+  mobile: 480px,
+  mobile-sm: 320px
+);
